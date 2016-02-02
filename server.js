@@ -1,6 +1,8 @@
 var express = require('express'),
     server = express();
 
+server.use(express.static(__dirname+'/css'));
+
 server.get('/', function(req, res){
 	res.sendFile('html/index.html', { root: __dirname });
 });
@@ -8,7 +10,7 @@ server.get('/', function(req, res){
 server.post('/signup', function(req,res){
     res.redirect('/');
 });
-server.listen(8080, function(){
 
+server.listen(8080, function(){
 	console.log("Now listening on port 8080");
 });

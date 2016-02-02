@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Signup </title>
-	</head>
-	<body>
-		<!-- Let's fill in some things -->
- 		<form action="/signup"  method="POST">
+<title> sign up for twitter </title>
+<head>
+	<nav>
+		<div class="filler">
+			<link rel="stylesheet" href="styles.css">
+			<div class="global-nav-inner">
+				<div class="container">
+					<ul class="nav-js-global-actions" role="navigation" id="global-actions"></ul>
+					<ul>
+						<div class="link">
+							<a href="/language/">Language: English</a>
+							<a href="/already have/">Have an account? Log in.</a>
+						</div>
+					</div>
+				</ul></nav>
+				<title> sign up </title>
 				<div>
-					<label for="name"> Name:</label>
-					<input type= "text" id="name" name="name" placeholder= "input your name">
-				</div>
-				<div>
-					<label for= "email"> Email:</label>
-					<input type= "text" id="email" name="email">
-				</div>
-				<div>
-					<button type="submit" name="button"> sign up </button>
-				</div>
-		</form>
-	</body>
-</html>
+				</head>
+				<h1>Join Twitter today.</h1>
+
+				<body>
+					<!-- Let's fill in some things -->
+					<form action="/signup"  method="POST">
+						<div class="box">
+							<label for="name">
+								<input type= "text" id="name" name="name" placeholder= "Full name">
+							</div>
+							<div class="box">
+								<label for= "email"  placeholder="Phone or email">
+									<input type= "text" id="email" name="name" placeholder="Phone or email">
+								</div>
+								<div class="box">
+									<lable for="password">
+										<input type="text" id="email" name="name" placeholder="Password">
+									</div>
+									<div class="cookie">
+										<input type="checkbox" name="cookie" class="paddingClass" checked />
+										<span class="checkboxtext"> Tailor Twitter based on my recent website visits. <style media="screen">
+										</style><a href="learn more/">learn more.</a>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<button type="submit" name="button"> sign up </button>
+								<div class="terms">
+									By signing up, you agree to the <a href="terms/">Terms of Service</a> and <a href="privacy/">
+										Privacy Policy,</a></div><div class="terms2"> including <a href="cookie use/">Cookie Use.</a>
+											Others will be able to find you</div> <div class="terms3"> by email or phone number when provided.
+											</div>
+											<a href="Advanced/">Advanced options</a>
+
+										</div>
+									</form>
+								</body>
+								</html>
